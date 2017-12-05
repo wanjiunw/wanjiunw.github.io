@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Add Google font -->
+    <!-- Order Schedule-->
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+
+    <!-- A good tool that won't let you miss any order -->
+    <link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two:700" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+
+    <!-- Add bootstrap.min.css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- Add external stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--<link href="./css/bootstrap.css" rel="stylesheet" />-->
+    <link href="./css/rotating-card.css" rel="stylesheet" />
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Add Navbar -->
+    <nav id="navbar" class="navbar navbar-fixed-top navbar-light bg-faded">
+
+        <a class="navbar-brand" href="#">MyApp</a>
+
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#about">About</a>
+            <a class="nav-item nav-link" href="#download">Download The App</a>
+        </div>
+    </nav>
+
+    <!-- Add a jumbotron -->
+    <div class="jumbotron">
+        <h1 class="display-4">Order Schedule</h1>
+        <p class="jumbotron-text lead">A good tool that won't let you miss any order.</p>
+    </div>
+
+    <div class="clear"></div>
+
+    <!-- Add a timebar -->
+    <div class="datebar">
+        <div class="row">
+            <h2 id="date"></h2>
+            <h2 id="day"></h2>
+        </div>
+
+        <div class="row" id="timebar-width">
+            <p id="empty" class="timebar-menu col-xs-1"></p>
+
+            <p id="hour" class="border-left timebar-menu col-xs-1"></p>
+            <p id="minute" class="border-left timebar-menu col-xs-1"></p>
+            <p id="sec" class="border-left timebar-menu col-xs-1"></p>
+            <p id="ampm" class="border-left timebar-menu col-xs-1"></p>
+        </div>
+    </div>
+    <!-- Card section -->
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <!-- Add card 1 -->
+            <div class="col-md-4 col-sm-12">
+
+                <div class="card-container manual-flip">
+                    <div class="card">
+                        <div class="front">
+                            <div class="cover">
+                                <img src="https://images.britcdn.com/wp-content/uploads/2014/03/krispykreme.jpg?fit=max&w=1440" />
+                            </div>
+                            <div class="user">
+                                <img class="img-circle" src="./images/bucket.jpg" />
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h4 class="card-title">GMHBC</h4>
+                                    <p class="card-text ">Order every Monday, Wednesday and Friday by 12 pm</p>
+                                </div>
+
+                                <div class="footer">
+                                    <button class="btn btn-simple" onclick="rotateCard(this)">
+                        <i class="fa fa-mail-forward"></i> 
+                    Manual Rotation</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="header">
+                                <h5 class="motto">GMHBC</h5>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <li class="text-left">Cinn Roll Cream Cheese Icing CSM</li>
+                                    <li class="text-left">Brill Icing Breakfast Roll</li>
+                                    <li class="text-left">EZ Blueberry Icing</li>
+                                    <li class="text-left">EZ Lemon Icing</li>
+                                    <li class="text-left">EZ Orange Icing</li>
+                                    <li class="text-left">EZ Salted Caramel Icing</li>
+                                    <li class="text-left">Glaze Shine 40 PL</li>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                <i class="fa fa-reply"></i> Back
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of card 1 -->
+            <!-- Add card 2 -->
+            <div class="col-md-4 col-sm-12">
+                <div class="card-container manual-flip">
+                    <div class="card">
+                        <div class="front">
+                            <div class="cover">
+                                <img src="https://www.fortlauderdaledaily.com/sites/default/files/upfront/originalimages/donuts.jpg" />
+                            </div>
+                            <div class="user">
+                                <img class="img-circle" src="https://images-na.ssl-images-amazon.com/images/I/61mpxQG%2BmQL._SL1000_.jpg" />
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h4 class="card-title">SUPPLIES/INGR</h4>
+                                    <p class="card-text ">Order every Monday, Wednesday and Friday by 3 pm</p>
+                                </div>
+
+                                <div class="footer">
+                                    <button class="btn btn-simple" onclick="rotateCard(this)">
+                        <i class="fa fa-mail-forward"></i> 
+                    Manual Rotation</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="header">
+                                <h5 class="motto">SUPPLIES/INGR</h5>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <li class="text-left">Brill Icing SMKY Mountain Maple</li>
+                                    <li class="text-left">Brill TS Dipem Chocolates</li>
+                                    <li class="text-left">GM Flour Unbleached Harvest King P (麵粉)</li>
+                                    <li class="text-left">TS Cream Cheese Icing TFF 18 PL</li>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                <i class="fa fa-reply"></i> Back
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of card 2 -->
+            <!-- Add card 3 -->
+            <div class="col-md-4 col-sm-12">
+                <div class="card-container manual-flip">
+                    <div class="card">
+                        <div class="front">
+                            <div class="cover">
+                                <img src="http://www.culicurious.com/wp-content/uploads/2012/11/Sharp-Cheddar-Cheese.jpg?189db0&189db0" />
+                            </div>
+                            <div class="user">
+                                <img class="img-circle" src="http://www.mercurynews.com/wp-content/uploads/2016/10/cct-tasteoff-1113-01.jpg?w=525" />
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h4 class="card-title">Fresh Meat</h4>
+                                    <p class="card-text ">Order every day by 10 am (Except Tuesday)</p>
+                                </div>
+
+                                <div class="footer">
+                                    <button class="btn btn-simple" onclick="rotateCard(this)">
+                        <i class="fa fa-mail-forward"></i> 
+                    Manual Rotation</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="header">
+                                <h5 class="motto">Fresh Meat</h5>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <li class="text-left">Great Lakes Cheddar Cheese 4 Focaccia</li>
+                                    <li class="text-left">Great Lakes Cheese Asiago</li>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                <i class="fa fa-reply"></i> Back
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of card 3 -->
+            <!-- Add card 4 -->
+            <div class="col-md-4 col-sm-12">
+                <div class="card-container manual-flip">
+                    <div class="card">
+                        <div class="front">
+                            <div class="cover">
+                                <img src="./images/rotating_card_thumb3.jpg" />
+                            </div>
+                            <div class="user">
+                                <img class="img-circle" src="./images/bucket.jpg" />
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h4 class="card-title">CPS</h4>
+                                    <p class="card-text ">Order every Wednesday and Sunday</p>
+                                </div>
+
+                                <div class="footer">
+                                    <button class="btn btn-simple" onclick="rotateCard(this)">
+                        <i class="fa fa-mail-forward"></i> 
+                    Manual Rotation</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="header">
+                                <h5 class="motto">CPS</h5>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <li class="text-left">Callebaut Chocolate Chip Semi Sweet</li>
+                                    <li class="text-left">CPS American Sprinkles Orange & Chocolate</li>
+                                    <li class="text-left">CPS Baking Spray High Heat P (烤盤油)</li>
+                                    <li class="text-left">CPS FF INC Filling Blueberry, Strawberry, VIENNA KREME</li>
+                                    <li class="text-left">CPS ING Almonds Sliced Thin</li>
+
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                <i class="fa fa-reply"></i> Back
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of card 4 -->
+            <!-- Add card 5 -->
+            <div class="col-md-4 col-sm-12">
+                <div class="card-container manual-flip">
+                    <div class="card">
+                        <div class="front">
+                            <div class="cover">
+                                <img src="./images/rotating_card_thumb3.jpg" />
+                            </div>
+                            <div class="user">
+                                <img class="img-circle" src="./images/bucket.jpg" />
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h4 class="card-title">Frozen Deli</h4>
+                                    <p class="card-text ">Order every Monday, Wednesday and Saturday by 3 pm</p>
+                                </div>
+
+                                <div class="footer">
+                                    <button class="btn btn-simple" onclick="rotateCard(this)">
+                        <i class="fa fa-mail-forward"></i> 
+                    Manual Rotation</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="header">
+                                <h5 class="motto">Frozen Deli</h5>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <li class="text-left">Cinn Roll Cream Cheese Icing CSM</li>
+                                    <li class="text-left">Brill Icing Breakfast Roll</li>
+                                    <li class="text-left">EZ Blueberry Icing</li>
+                                    <li class="text-left">EZ Lemon Icing</li>
+                                    <li class="text-left">EZ Orange Icing</li>
+                                    <li class="text-left">EZ Salted Caramel Icing</li>
+                                    <li class="text-left">Glaze Shine 40 PL</li>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                <i class="fa fa-reply"></i> Back
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of card 5 -->
+        </div>
+        <!-- end of md10 -->
+    </div>
+    <!-- end of raw -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/1.7.2/moment.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.2/js/tether.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <!--<script src="js/index.js"></script>-->
+
+    <script>
+        var myVar = setInterval(function() {
+            myTimer()
+        }, 1000);
+        console.log("myVar:" + myVar);
+
+        function myTimer() {
+            //var d = new Date();
+            var date = moment().format('MMMM Do YYYY');
+            var day = moment().format('dddd');
+            var t1 = moment().format('h');
+            var t2 = moment().format('mm');
+            var t3 = moment().format('ss');
+            var t4 = moment().format('a');
+
+            document.getElementById("date").innerHTML = date;
+            document.getElementById("day").innerHTML = day;
+            document.getElementById("hour").innerHTML = t1;
+            document.getElementById("minute").innerHTML = t2;
+            document.getElementById("sec").innerHTML = t3;
+            document.getElementById("ampm").innerHTML = t4;
+
+        }
+        $().ready(function() {
+            //$('[rel="tooltip"]').tooltip();
+
+        });
+
+        function rotateCard(btn) {
+            var $card = $(btn).closest('.card-container');
+            console.log("card: " + $card);
+            if ($card.hasClass('hover')) {
+                $card.removeClass('hover');
+            } else {
+                $card.addClass('hover');
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

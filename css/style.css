@@ -1,0 +1,168 @@
+body {
+    /*Background color for entire page*/
+    background-color: #fff;
+}
+
+.jumbotron {
+    color: #F7F7F9;
+    margin-top: 45px;
+    font-family: 'Berkshire Swash', cursive;
+    background-image: linear-gradient(rgba(170, 170, 170, 0), rgba(170, 170, 170, 0.9)), url(../bakery.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 90px;
+
+}
+
+.display-4 h1 {
+    color: #fff;
+    margin-top: 45px;
+    font-family: 'Berkshire Swash', cursive;
+    background-image: linear-gradient(rgba(170, 170, 170, 0), rgba(170, 170, 170, 0.9)), url(../bakery.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.jumbotron-text {
+    font-family: 'Pompiere', cursive;
+    font-size: 2em;
+}
+
+#datebar {
+    text-align: center;
+    margin: 20px;
+}
+
+#timebar-width {
+    width: 200px;
+    margin: auto;
+}
+
+.timebar-menu {
+    font-weight: bold;
+    font-size: 100%;
+    /* padding top, right, bottom, left*/
+    padding: 15px 20px 0 15px;
+    height: 20px;
+}
+
+.border-left {
+    border-left: 1px #CCCCCC solid;
+    height: 65%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.bordertest {
+    border: 3px solid blue;
+
+}
+
+
+#smallproj {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: mediumseagreen;
+}
+
+#h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: mediumseagreen;
+}
+
+.topdiv {
+    width: 800px;
+    height: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*  background-size: cover;
+    background-image: linear-gradient(rgba(100, 100, 100, 0.5), rgba(0, 0, 0, 0.5) ), url("https://az858194.vo.msecnd.net/cdn/media/home/whats-in-store/bakery/breads-and-bagels/bakery-cheese-bagel-580x443.ashx?w=430");
+    position: relative; 
+    
+    
+    display: table-cell;
+    vertical-align: middle */
+    /*Styling the top "header" for my page
+  border-top-style: solid;
+  border-bottom-style: double;
+  border-color: #F36906;
+  border-width: 200px;*/
+    /*padding-left: 500px;*/
+}
+
+.timediv {
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.boxdiv {
+    /*A blue box with rounded corners div*/
+    background-color: AliceBlue;
+    border: solid;
+    border-width: 1px;
+    border-color: CornflowerBlue;
+    margin: 0px 2px 15px 2px;
+    padding: 0px 17px 5px 17px;
+    border-radius: 25px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.tablediv {
+    /*A blue div that covers the full widith of the page*/
+    background-color: DeepSkyBlue;
+    width: 100%;
+    margin: 0px 0px 0px -9px;
+    padding: 2px 9px 0px 0px;
+    color: GhostWhite;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+
+
+.tablediv p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: RGB(0, 119, 181);
+}
+
+
+
+img {
+    width: 100%;
+    border: solid;
+    border-width: 1px;
+    border-color: GhostWhite;
+}
+
+li {
+    font-size: 1em;
+}
+
+table {
+    /*puts table in the center of the page*/
+    margin: auto;
+}
+
+.like {
+    color: white;
+}
